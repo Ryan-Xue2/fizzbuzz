@@ -6,12 +6,19 @@ public class Multiples {
         System.out.println(count);
     }
     public static void multiples(int n, int a, int b) {
+        /*
         int res = 0;
         for (int i = 1; i < n; i++) {
             if (i % a == 0 || i % b == 0) {
                 res++;
             } 
         }
+        return res;
+        */
+        int res = 0;
+        res += n / a;
+        res += n / b;
+        res -= n / (a*b);
         return res;
     }
 }
