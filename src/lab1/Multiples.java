@@ -23,4 +23,7 @@ public class Multiples {
         }  
         return res;
     }
+    public static int multiples() {
+        multiples(1000, 3, 5);
+    }
 }
