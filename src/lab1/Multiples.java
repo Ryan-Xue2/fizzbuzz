@@ -18,7 +18,9 @@ public class Multiples {
         int res = 0;
         res += --n / a;
         res += n / b;
-        res -= n / (a*b);
+        if (a != b) {
+            res -= n / (a*b);
+        }  
         return res;
     }
 }
